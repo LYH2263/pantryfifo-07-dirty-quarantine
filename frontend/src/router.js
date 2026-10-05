@@ -4,6 +4,7 @@ import Layer from './pages/Layer.vue'
 import Inbound from './pages/Inbound.vue'
 import Consume from './pages/Consume.vue'
 import Settings from './pages/Settings.vue'
+import Quarantine from './pages/Quarantine.vue'
 export default createRouter({
   history: createWebHistory(),
   routes: [
@@ -11,6 +12,7 @@ export default createRouter({
     { path: '/layer/:layer', component: Layer, props: true },
     { path: '/inbound', component: Inbound },
     { path: '/consume', component: Consume },
+    { path: '/quarantine', component: Quarantine },
     { path: '/settings', component: Settings },
   ],
 })

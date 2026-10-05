@@ -29,3 +29,27 @@ h1,h2 { font-family: "Space Grotesk", sans-serif; }
 button { background: var(--teal); color: #fff; border: 0; border-radius: 10px; padding: 8px 12px; font: inherit; cursor: pointer; }
 input, select { padding: 8px; border-radius: 8px; border: 1px solid var(--line); font: inherit; margin: 4px 0 10px; width: 100%; max-width: 320px; }
 .muted { color: #5a7a7e; font-size: 13px; }
+.qbadge {
+  background: #c45c26; color: #fff; border-radius: 999px; font-size: 11px;
+  padding: 1px 7px; margin-left: 5px;
+}
+.qcard {
+  background: #fff; border: 1px solid var(--line); border-left: 4px solid #b0883a;
+  border-radius: 12px; padding: 12px 14px; margin: 10px 0; max-width: 640px;
+}
+.qhead { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.lot-qty { font-variant-numeric: tabular-nums; }
+.lot-qty.neg { color: #b03a3a; font-weight: 700; }
+.tag {
+  font-size: 11px; padding: 2px 8px; border-radius: 999px;
+  background: #f3e9d2; color: #7a5a17; border: 1px solid #e2cfa0;
+}
+.tag.expired { background: #f7d9d9; color: #8a2a2a; border-color: #e3b4b4; }
+.actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.actions input { width: 180px; margin: 0; }
+button.danger { background: #a8452e; }
+button.ghost { background: #fff; color: var(--teal); border: 1px solid var(--line); }
+button:disabled { opacity: .55; cursor: default; }
+.msg { margin-top: 8px; font-size: 13px; }
+.msg.ok { color: #2f7a3f; }
+.msg.err { color: #b03a3a; }
